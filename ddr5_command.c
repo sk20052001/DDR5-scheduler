@@ -137,18 +137,18 @@ void dimm(struct queue queue) {
 	}	
 }
 
-int main(int argc, char *argv[2]) {
-    if (argc > 2) {
+int main(int argc, char *argv[3]) {
+    if (argc > 3) {
 		printf("Enter Currect number of arguments!");
 		return 0;
 	}	
-	if (argc>0) {
+	if (argc>1) {
 		inputFile = fopen(argv[1], "r");
 	} else {
 		inputFile = fopen("trace.txt", "r");
 	}
 
-	if(argc>1)
+	if(argc>2)
 	{
 		outputFile=fopen(argv[2], "w");
 	}
