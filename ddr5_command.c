@@ -8,8 +8,8 @@ struct queue queue[queueSize];
 
 FILE *inputFile, *outputFile;
 int incrementFlag, time, core, opCode, front = -1, rear = -1, end = 1;
-unsigned long cpu = 0, dim = 0;
-long long address;
+unsigned long int cpu = 0, dim = 0;
+unsigned long long int address;
 
 void enqueue() {
 	if (front == -1) {
